@@ -265,6 +265,25 @@ article.active {
   border-radius: 3px;
 }
 
+.has-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.has-scrollbar::-webkit-scrollbar-track {
+  background: var(--onyx);
+  border-radius: 5px;
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--orange-yellow-crayola);
+  border-radius: 5px;
+}
+
+
+.has-scrollbar::-webkit-scrollbar-button {
+  width: 20px;
+}
 
 
 
@@ -543,4 +562,37 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
+}
+
+
+/* ========================
+       #Testimonials
+======================== */
+
+.testimonials {
+  margin-bottom: 30px;
+}
+
+.testimonials-title {
+  margin-bottom: 20px;
+}
+
+.testimonials-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  margin: 0 -15px;
+  padding: 25px 15px;
+  padding-bottom: 35px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+}
+
+
+.testimonials-item {
+  min-width: 100%;
+  scroll-snap-align: center;
 }
